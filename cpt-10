@@ -1,0 +1,5 @@
+def getRow(rowIndex):
+    row = [1]
+    for i in range(rowIndex):
+        row.append(row[-1] * (rowIndex-i) // (i+1))
+    return row
